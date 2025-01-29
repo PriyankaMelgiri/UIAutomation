@@ -15,19 +15,16 @@ public class BasicActions {
 	SiteLoginLocator siteLoginLocator;
 	MyAccountFlyoutLocator myAccountFlyoutLocator;
 	HomepegeLocator homepegeLocator;
-	//CookieLocator cookieLocator;
 	SignInLocator signInLocator;
 	InternationalShippingPOPUpLocator internationalShippingPOPUpLocator;
 	HelperClass helperClass;
 	
-	public void BasicProcess(){
+	public void siteLogin(){
 		siteLoginLocator=new SiteLoginLocator();
 		helperClass=new HelperClass();
-		
 		if(helperClass.getElement(siteLoginLocator.passwordProtectedSiteHeading).isDisplayed()) {
 			helperClass.getElement(siteLoginLocator.passwordField).sendKeys("DXLG#dotcom24");
 			helperClass.getElement(siteLoginLocator.submitButton).click();
-			
 		}	
 	}
 	
@@ -43,13 +40,11 @@ public class BasicActions {
 //		else {
 //			
 //		}
-//		
 	}
 	
 	public void SignIn() {
 		myAccountFlyoutLocator=new MyAccountFlyoutLocator();
 		helperClass.getElement(homepegeLocator.myAccountIcon).click();
-		//homepegeLocator.myAccountIcon.click();
 		helperClass.getElement(myAccountFlyoutLocator.SignInButton).click();
 	
 		signInLocator=new SignInLocator();
@@ -57,10 +52,9 @@ public class BasicActions {
 		helperClass.getElement(signInLocator.Auth0PasswordField).sendKeys("Priyanka1@");
 		helperClass.getElement(signInLocator.Auth0ContinueButton).click();
 		
-	
 		 boolean myAccountLoggedUser=helperClass.getElement(homepegeLocator.myAccountIcon).getAttribute("aria-label").contains("Guest");
 		 Assert.assertFalse(myAccountLoggedUser);
-		 internationalShippingPOPUpLocator=new InternationalShippingPOPUpLocator();
-		 helperClass.getElement(internationalShippingPOPUpLocator.InternationalShippingCloseIcon).click();
+		// internationalShippingPOPUpLocator=new InternationalShippingPOPUpLocator();
+		// helperClass.getElement(internationalShippingPOPUpLocator.InternationalShippingCloseIcon).click();
 	}
 }
