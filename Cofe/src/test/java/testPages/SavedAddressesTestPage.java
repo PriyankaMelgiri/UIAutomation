@@ -37,6 +37,7 @@ public class SavedAddressesTestPage {
 	  helperClass.getElement(savedAddressesLocator.lastNameField).sendKeys("Patil");
 	  helperClass.getElement(savedAddressesLocator.addressPOBoxField).sendKeys("Po Box");
 	  helperClass.getElement(savedAddressesLocator.addressSuggestionList).click();
+	  
 	  helperClass.getElement(savedAddressesLocator.addAddressButton).click();
 	  helperClass.getElement(savedAddressesLocator.phoneNumberField).sendKeys("2121111111");
 	  helperClass.getElement(savedAddressesLocator.addAddressButton).click();
