@@ -1,5 +1,6 @@
 package testPages;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Locator.HomepegeLocator;
@@ -35,7 +36,11 @@ public class SavedAddressesTestPage {
 	  helperClass.getElement(savedAddressesLocator.lastNameField).clear();
 	  helperClass.getElement(savedAddressesLocator.lastNameField).sendKeys("Patil");
 	  helperClass.getElement(savedAddressesLocator.addressPOBoxField).sendKeys("Po Box");
-	  helperClass.getElement(null);
-	  
+	  helperClass.getElement(savedAddressesLocator.addressSuggestionList).click();
+	  helperClass.getElement(savedAddressesLocator.addAddressButton).click();
+	  helperClass.getElement(savedAddressesLocator.phoneNumberField).sendKeys("2121111111");
+	  helperClass.getElement(savedAddressesLocator.addAddressButton).click();
+	  boolean addressAddedSucessMessage=helperClass.getElement(savedAddressesLocator.addressAddedSucessMessage).isDisplayed();
+	  Assert.assertTrue(addressAddedSucessMessage);
   }
 }

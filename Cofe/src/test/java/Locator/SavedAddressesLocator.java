@@ -16,11 +16,15 @@ public class SavedAddressesLocator {
 	
 	public By addressPOBoxField=By.xpath("//input[@placeholder='Address /PO Box *']");
 	
+	public By addressSuggestionList=By.xpath("//input[@placeholder='Address /PO Box *']/parent::div//div//p");
+	
 	public By phoneNumberField=By.id("phone");
 	
 	public By addAddressButton=By.xpath("//div[@role='group']//button[text()='Add Address']");
 	
 	public By addressCancelButton=By.xpath("//div[@role='group']//button[text()='Cancel']");
+	
+	public By addressAddedSucessMessage=By.xpath("//div[text()='Your Address has been successfully added.']");
 	
 	public By editButton=By.xpath("//button[text()='Edit']");
 	
