@@ -3,7 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testPages.ProfileandPreferencesTestPage"/>
+     <!-- Exclude the entire class by disabling it -->
+      <class name="testPages.ProfileandPreferencesTestPage"  enabled="false"/>
+      <class name="testPages.SavedAddressesTestPage"/>
+      <class name="testPages.PaymentMethodTestPage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

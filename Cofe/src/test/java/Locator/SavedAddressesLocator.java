@@ -28,5 +28,14 @@ public class SavedAddressesLocator {
 	
 	public By editButton=By.xpath("//button[text()='Edit']");
 	
+	public By updateAddressSuccessMessage=By.xpath("//div[@role='status']//div[text()='Your Address has been successfully added.']");
+	
+	public By deleteButton=By.xpath("//button[text()='Delete']");
+	
+	public By deleteButtonConfirm=By.xpath("//footer//button[text()='Delete']");
+	
+	public By setAsDefaultRadioButton=By.xpath("//p[text()='Use as default shipping address']");
+	
+	public By defaultAddressSetSuccess=By.xpath("//div[text()='Default shipping address has been successfully updated.']");
 	
 }
