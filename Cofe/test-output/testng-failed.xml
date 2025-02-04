@@ -5,13 +5,23 @@
     <classes>
       <class name="testPages.ProfileandPreferencesTestPage">
         <methods>
-          <include name="NavigateToProfileandPreferences"/>
           <include name="UpdateFirstName"/>
           <include name="LaunchSite"/>
-          <include name="UpdateEmailaddress"/>
           <include name="UpdateLastName"/>
+          <include name="UpdateEmailaddress"/>
         </methods>
       </class> <!-- testPages.ProfileandPreferencesTestPage -->
+      <class name="testPages.SavedAddressesTestPage">
+        <methods>
+          <include name="addAddress"/>
+        </methods>
+      </class> <!-- testPages.SavedAddressesTestPage -->
+      <class name="testPages.PaymentMethodTestPage">
+        <methods>
+          <include name="updateCreditCard"/>
+          <include name="LaunchSite"/>
+        </methods>
+      </class> <!-- testPages.PaymentMethodTestPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
