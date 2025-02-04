@@ -52,8 +52,8 @@ public class BasicActions {
 		helperClass.getElement(signInLocator.Auth0PasswordField).sendKeys("Priyanka1@");
 		helperClass.getElement(signInLocator.Auth0ContinueButton).click();
 		
-//		 boolean myAccountLoggedUser=helperClass.getElement(homepegeLocator.myAccountIcon).getAttribute("aria-label").contains("Guest");
-//		 Assert.assertFalse(myAccountLoggedUser);
+		 boolean myAccountLoggedUser=helperClass.getElement(homepegeLocator.myAccountIcon).getAttribute("aria-label").contains("Guest");
+		 Assert.assertFalse(myAccountLoggedUser);
 		// internationalShippingPOPUpLocator=new InternationalShippingPOPUpLocator();
 		// helperClass.getElement(internationalShippingPOPUpLocator.InternationalShippingCloseIcon).click();
 	}

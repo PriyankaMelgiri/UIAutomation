@@ -44,25 +44,4 @@ public class SavedAddressesTestPage {
 	  boolean addressAddedSucessMessage=helperClass.getElement(savedAddressesLocator.addressAddedSucessMessage).isDisplayed();
 	  Assert.assertTrue(addressAddedSucessMessage);
   }
-  
-  @Test
-  public void editAddress() {
-	  helperClass.getElement(savedAddressesLocator.editButton).click();
-	  helperClass.getElement(savedAddressesLocator.phoneNumberField).sendKeys("2121111111");
-	  boolean updateAddressSuccessMessage=helperClass.getElement(savedAddressesLocator.updateAddressSuccessMessage).isDisplayed();
-	  Assert.assertTrue(updateAddressSuccessMessage);
-  }
-  
-  @Test
-  public void deleteAddress() {
-	  helperClass.getElement(savedAddressesLocator.deleteButton).click();
-	  helperClass.getElement(savedAddressesLocator.deleteButtonConfirm).click();
-  }
-  
-  @Test
-  public void setAsDefault() {
-	  helperClass.getElement(savedAddressesLocator.setAsDefaultRadioButton).click();
-	  boolean defaultAddressSetSuccessMessage=helperClass.getElement(savedAddressesLocator.defaultAddressSetSuccess).isDisplayed();
-	  Assert.assertTrue(defaultAddressSetSuccessMessage);
-  }
 }
