@@ -9,9 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">153,702</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">168,383</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testPages.PaymentMethodTestPage</td><td><a href="#m0">updateCreditCard</a></td><td rowspan="1">1738259614730</td><td rowspan="1">72691</td></tr><tr class="failedodd"><td rowspan="3">testPages.ProfileandPreferencesTestPage</td><td><a href="#m1">UpdateEmailaddress</a></td><td rowspan="1">1738259577956</td><td rowspan="1">3180</td></tr><tr class="failedodd"><td><a href="#m2">UpdateFirstName</a></td><td rowspan="1">1738259574689</td><td rowspan="1">194</td></tr><tr class="failedodd"><td><a href="#m3">UpdateLastName</a></td><td rowspan="1">1738259574889</td><td rowspan="1">3064</td></tr><tr class="failedeven"><td rowspan="1">testPages.SavedAddressesTestPage</td><td><a href="#m4">addAddress</a></td><td rowspan="1">1738259581142</td><td rowspan="1">30459</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testPages.ProfileandPreferencesTestPage</td><td><a href="#m5">NavigateToProfileandPreferences</a></td><td rowspan="1">1738259537206</td><td rowspan="1">37473</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testPages.PaymentMethodTestPage</td><td><a href="#m0">updateCreditCard</a></td><td rowspan="1">1738744952538</td><td rowspan="1">95176</td></tr><tr class="failedodd"><td rowspan="4">testPages.SavedAddressesTestPage</td><td><a href="#m1">addAddress</a></td><td rowspan="1">1738744886050</td><td rowspan="1">60455</td></tr><tr class="failedodd"><td><a href="#m2">deleteAddress</a></td><td rowspan="1">1738744946525</td><td rowspan="1">122</td></tr><tr class="failedodd"><td><a href="#m3">editAddress</a></td><td rowspan="1">1738744946656</td><td rowspan="1">116</td></tr><tr class="failedodd"><td><a href="#m4">setAsDefault</a></td><td rowspan="1">1738744946780</td><td rowspan="1">108</td></tr></tbody>
 </table>
 <h2>Test</h2><h3 id="m0">testPages.PaymentMethodTestPage#updateCreditCard</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[@name=&apos;cardname&apos;] (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
@@ -20,14 +20,14 @@
 	at testPages.PaymentMethodTestPage.updateCreditCard(PaymentMethodTestPage.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;cardname&apos;]&quot;}
-  (Session info: chrome=132.0.6834.111)
+  (Session info: chrome=132.0.6834.160)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c48bbb8641c9622c973433db5fcc0ee0, findElement {using=xpath, value=//input[@name=&apos;cardname&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59216/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c48bbb8641c9622c973433db5fcc0ee0
+Command: [f4c764e19b0152067f19c657d74f594f, findElement {value=//input[@name=&apos;cardname&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56271/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4c764e19b0152067f19c657d74f594f
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -44,15 +44,16 @@ Session ID: c48bbb8641c9622c973433db5fcc0ee0
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 28 more
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testPages.ProfileandPreferencesTestPage#UpdateEmailaddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=132.0.6834.111)
+<h3 id="m1">testPages.SavedAddressesTestPage#addAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=132.0.6834.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a8feb905984d7e6c403d4b0b76a1b5, clickElement {id=f.24F7F84B1B568AD02F6C5AA4AEEA1F7C.d.16280D73EB8771E155CF2EE7038D911D.e.205}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59080/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d8a8feb905984d7e6c403d4b0b76a1b5)] -&gt; xpath: //button[text()=&apos;Edit&apos;]]
-Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
+Command: [befe849d41cac132e16a26acbb2e24e1, clickElement {id=f.8A6067547B6788E73D16872926AD3D1F.d.4DCE581B9519130A031898656D6E727A.e.262}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55801/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (befe849d41cac132e16a26acbb2e24e1)] -&gt; xpath: //div[@role=&apos;group&apos;]//button[text()=&apos;Add Address&apos;]]
+Session ID: befe849d41cac132e16a26acbb2e24e1
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -62,39 +63,18 @@ Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at testPages.ProfileandPreferencesTestPage.UpdateEmailaddress(ProfileandPreferencesTestPage.java:75)
+	at testPages.SavedAddressesTestPage.addAddress(SavedAddressesTestPage.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testPages.ProfileandPreferencesTestPage#UpdateFirstName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=132.0.6834.111)
+<h3 id="m2">testPages.SavedAddressesTestPage#deleteAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=132.0.6834.160)
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a8feb905984d7e6c403d4b0b76a1b5, clearElement {id=f.24F7F84B1B568AD02F6C5AA4AEEA1F7C.d.16280D73EB8771E155CF2EE7038D911D.e.199}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59080/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d8a8feb905984d7e6c403d4b0b76a1b5)] -&gt; id: firstName]
-Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at testPages.ProfileandPreferencesTestPage.UpdateFirstName(ProfileandPreferencesTestPage.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testPages.ProfileandPreferencesTestPage#UpdateLastName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=132.0.6834.111)
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a8feb905984d7e6c403d4b0b76a1b5, clickElement {id=f.24F7F84B1B568AD02F6C5AA4AEEA1F7C.d.16280D73EB8771E155CF2EE7038D911D.e.205}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59080/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d8a8feb905984d7e6c403d4b0b76a1b5)] -&gt; xpath: //button[text()=&apos;Edit&apos;]]
-Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
+Command: [befe849d41cac132e16a26acbb2e24e1, clickElement {id=f.8A6067547B6788E73D16872926AD3D1F.d.4DCE581B9519130A031898656D6E727A.e.263}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55801/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (befe849d41cac132e16a26acbb2e24e1)] -&gt; xpath: //button[text()=&apos;Delete&apos;]]
+Session ID: befe849d41cac132e16a26acbb2e24e1
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -104,25 +84,18 @@ Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at testPages.ProfileandPreferencesTestPage.UpdateLastName(ProfileandPreferencesTestPage.java:62)
+	at testPages.SavedAddressesTestPage.deleteAddress(SavedAddressesTestPage.java:60)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testPages.SavedAddressesTestPage#addAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h1[text()=&apos;Password protected site&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at setup.HelperClass.getElement(HelperClass.java:14)
-	at setup.BasicActions.siteLogin(BasicActions.java:25)
-	at testPages.SavedAddressesTestPage.addAddress(SavedAddressesTestPage.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Password protected site&apos;]&quot;}
-  (Session info: chrome=132.0.6834.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<h3 id="m3">testPages.SavedAddressesTestPage#editAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=132.0.6834.160)
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a8feb905984d7e6c403d4b0b76a1b5, findElement {using=xpath, value=//h1[text()=&apos;Password protected site&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59080/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
+Command: [befe849d41cac132e16a26acbb2e24e1, clickElement {id=f.8A6067547B6788E73D16872926AD3D1F.d.4DCE581B9519130A031898656D6E727A.e.264}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55801/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (befe849d41cac132e16a26acbb2e24e1)] -&gt; xpath: //button[text()=&apos;Edit&apos;]]
+Session ID: befe849d41cac132e16a26acbb2e24e1
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -130,15 +103,31 @@ Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testPages.SavedAddressesTestPage.editAddress(SavedAddressesTestPage.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testPages.ProfileandPreferencesTestPage#NavigateToProfileandPreferences</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testPages.SavedAddressesTestPage#setAsDefault</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=132.0.6834.160)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [befe849d41cac132e16a26acbb2e24e1, clickElement {id=f.8A6067547B6788E73D16872926AD3D1F.d.4DCE581B9519130A031898656D6E727A.e.265}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55801/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (befe849d41cac132e16a26acbb2e24e1)] -&gt; xpath: //p[text()=&apos;Use as default shipping address&apos;]]
+Session ID: befe849d41cac132e16a26acbb2e24e1
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testPages.SavedAddressesTestPage.setAsDefault(SavedAddressesTestPage.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
