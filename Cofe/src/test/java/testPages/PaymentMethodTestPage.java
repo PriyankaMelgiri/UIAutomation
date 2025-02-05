@@ -33,6 +33,7 @@ public class PaymentMethodTestPage extends setupDriver{
 	  myAccountFlyoutLocator=new MyAccountFlyoutLocator();
 	  helperClass.getElement(myAccountFlyoutLocator.PaymentMethod).click();
 	  paymentMethodsLocator =new PaymentMethodsLocator();
+	  helperClass.getElement(paymentMethodsLocator.paymentMethodsLink).click();
 	  helperClass.getElement(paymentMethodsLocator.editButton).click();
 	  helperClass.getElement(paymentMethodsLocator.cardNameField).sendKeys("CreditCard");
 	  helperClass.getElement(paymentMethodsLocator.expireDateField).sendKeys("11/34");

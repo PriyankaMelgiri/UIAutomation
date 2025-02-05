@@ -8,8 +8,9 @@ import Locator.MyAccountFlyoutLocator;
 import Locator.SavedAddressesLocator;
 import setup.BasicActions;
 import setup.HelperClass;
+import setup.setupDriver;
 
-public class SavedAddressesTestPage {
+public class SavedAddressesTestPage extends setupDriver {
 	
 	BasicActions basicActions;
 	HomepegeLocator homepegeLocator;
@@ -18,7 +19,7 @@ public class SavedAddressesTestPage {
 	MyAccountFlyoutLocator myAccountFlyoutLocator;
 	
   @Test
-  public void addAddress() {
+  public void addAddress() throws InterruptedException {
 	  basicActions=new BasicActions();
 	  homepegeLocator=new HomepegeLocator();
 	  helperClass=new HelperClass();
@@ -27,6 +28,7 @@ public class SavedAddressesTestPage {
 	  basicActions.siteLogin();
 	  basicActions.cookieAccept();
 	  basicActions.SignIn();
+	  Thread.sleep(3000);	 
 	  helperClass.getElement(homepegeLocator.myAccountIcon).click();
 	  helperClass.getElement(myAccountFlyoutLocator.savedAdresses).click();
 	  helperClass.getElement(savedAddressesLocator.savedAddressesLink).click();
