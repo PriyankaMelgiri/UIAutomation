@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 5 failed,   1 passed</span>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,22 +103,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPages.ProfileandPreferencesTestPage" class="method navigator-link" hash-for-method="UpdateEmailaddress">UpdateEmailaddress</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testPages.SavedAddressesTestPage" class="method navigator-link" hash-for-method="editAddress">editAddress</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPages.ProfileandPreferencesTestPage" class="method navigator-link" hash-for-method="UpdateFirstName">UpdateFirstName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPages.ProfileandPreferencesTestPage" class="method navigator-link" hash-for-method="UpdateLastName">UpdateLastName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPages.SavedAddressesTestPage" class="method navigator-link" hash-for-method="addAddress">addAddress</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testPages.SavedAddressesTestPage" class="method navigator-link" hash-for-method="setAsDefault">setAsDefault</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -140,6 +130,31 @@
                         <a href="#" panel-name="suite-Suite" title="testPages.ProfileandPreferencesTestPage" class="method navigator-link" hash-for-method="NavigateToProfileandPreferences">NavigateToProfileandPreferences</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testPages.ProfileandPreferencesTestPage" class="method navigator-link" hash-for-method="UpdateEmailaddress">UpdateEmailaddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testPages.ProfileandPreferencesTestPage" class="method navigator-link" hash-for-method="UpdateFirstName">UpdateFirstName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testPages.ProfileandPreferencesTestPage" class="method navigator-link" hash-for-method="UpdateLastName">UpdateLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testPages.SavedAddressesTestPage" class="method navigator-link" hash-for-method="addAddress">addAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testPages.SavedAddressesTestPage" class="method navigator-link" hash-for-method="deleteAddress">deleteAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -155,23 +170,23 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testPages.ProfileandPreferencesTestPage</span>
+              <span class="class-name">testPages.SavedAddressesTestPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="UpdateEmailaddress">
-                  </a> <!-- UpdateEmailaddress -->
-                  <span class="method-name">UpdateEmailaddress</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=132.0.6834.111)
+                  <a name="editAddress">
+                  </a> <!-- editAddress -->
+                  <span class="method-name">editAddress</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;chakra-button css-l7w3sh&quot; aria-label=&quot;... &quot;&gt;Edit&lt;/button&gt; is not clickable at point (1146, 16). Other element would receive the click: &lt;div class=&quot;chakra-modal__content-container css-wl0d9u&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=132.0.6834.160)
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a8feb905984d7e6c403d4b0b76a1b5, clickElement {id=f.24F7F84B1B568AD02F6C5AA4AEEA1F7C.d.16280D73EB8771E155CF2EE7038D911D.e.205}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59080/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d8a8feb905984d7e6c403d4b0b76a1b5)] -&gt; xpath: //button[text()=&apos;Edit&apos;]]
-Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
+Command: [8bcb7b51381cf7df21655c40ba2bcb03, clickElement {id=f.008D5053EEF5A977ED9DBC824D3751E7.d.E9559AF0D610E56931670784F7F8B2FB.e.341}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61921/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8bcb7b51381cf7df21655c40ba2bcb03)] -&gt; xpath: //button[text()=&apos;Edit&apos;]]
+Session ID: 8bcb7b51381cf7df21655c40ba2bcb03
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -181,7 +196,7 @@ Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at testPages.ProfileandPreferencesTestPage.UpdateEmailaddress(ProfileandPreferencesTestPage.java:75)
+	at testPages.SavedAddressesTestPage.editAddress(SavedAddressesTestPage.java:51)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
@@ -189,90 +204,24 @@ Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="UpdateFirstName">
-                  </a> <!-- UpdateFirstName -->
-                  <span class="method-name">UpdateFirstName</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=132.0.6834.111)
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a8feb905984d7e6c403d4b0b76a1b5, clearElement {id=f.24F7F84B1B568AD02F6C5AA4AEEA1F7C.d.16280D73EB8771E155CF2EE7038D911D.e.199}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59080/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d8a8feb905984d7e6c403d4b0b76a1b5)] -&gt; id: firstName]
-Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at testPages.ProfileandPreferencesTestPage.UpdateFirstName(ProfileandPreferencesTestPage.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="UpdateLastName">
-                  </a> <!-- UpdateLastName -->
-                  <span class="method-name">UpdateLastName</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=132.0.6834.111)
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a8feb905984d7e6c403d4b0b76a1b5, clickElement {id=f.24F7F84B1B568AD02F6C5AA4AEEA1F7C.d.16280D73EB8771E155CF2EE7038D911D.e.205}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59080/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d8a8feb905984d7e6c403d4b0b76a1b5)] -&gt; xpath: //button[text()=&apos;Edit&apos;]]
-Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at testPages.ProfileandPreferencesTestPage.UpdateLastName(ProfileandPreferencesTestPage.java:62)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testPages.PaymentMethodTestPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateCreditCard">
-                  </a> <!-- updateCreditCard -->
-                  <span class="method-name">updateCreditCard</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[@name=&apos;cardname&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+                  <a name="setAsDefault">
+                  </a> <!-- setAsDefault -->
+                  <span class="method-name">setAsDefault</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[text()=&apos;Default shipping address has been successfully updated.&apos;] (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at setup.HelperClass.getElement(HelperClass.java:14)
-	at testPages.PaymentMethodTestPage.updateCreditCard(PaymentMethodTestPage.java:37)
+	at setup.HelperClass.getElement(HelperClass.java:17)
+	at testPages.SavedAddressesTestPage.setAsDefault(SavedAddressesTestPage.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;cardname&apos;]&quot;}
-  (Session info: chrome=132.0.6834.111)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Default shipping address has been successfully updated.&apos;]&quot;}
+  (Session info: chrome=132.0.6834.160)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c48bbb8641c9622c973433db5fcc0ee0, findElement {using=xpath, value=//input[@name=&apos;cardname&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59216/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c48bbb8641c9622c973433db5fcc0ee0
+Command: [8bcb7b51381cf7df21655c40ba2bcb03, findElement {value=//div[text()=&apos;Default shipping address has been successfully updated.&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61921/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bcb7b51381cf7df21655c40ba2bcb03
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -297,30 +246,24 @@ Session ID: c48bbb8641c9622c973433db5fcc0ee0
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testPages.SavedAddressesTestPage</span>
+              <span class="class-name">testPages.PaymentMethodTestPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addAddress">
-                  </a> <!-- addAddress -->
-                  <span class="method-name">addAddress</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h1[text()=&apos;Password protected site&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at setup.HelperClass.getElement(HelperClass.java:14)
-	at setup.BasicActions.siteLogin(BasicActions.java:25)
-	at testPages.SavedAddressesTestPage.addAddress(SavedAddressesTestPage.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Password protected site&apos;]&quot;}
-  (Session info: chrome=132.0.6834.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+                  <a name="updateCreditCard">
+                  </a> <!-- updateCreditCard -->
+                  <span class="method-name">updateCreditCard</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=132.0.6834.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a8feb905984d7e6c403d4b0b76a1b5, findElement {using=xpath, value=//h1[text()=&apos;Password protected site&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59080/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
+Command: [140d305de19dde55dbaa836c7b1d756d, clickElement {id=f.F52203DEBEA48B4BD10A71D2BAD0A329.d.93D241D3400D97CE7DB1603CC147EC35.e.199}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\PRIYAN~1.PAT\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62084}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62084/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (140d305de19dde55dbaa836c7b1d756d)] -&gt; xpath: //button[text()=&apos;Edit&apos;]]
+Session ID: 140d305de19dde55dbaa836c7b1d756d
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -328,14 +271,10 @@ Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at testPages.PaymentMethodTestPage.updateCreditCard(PaymentMethodTestPage.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -353,6 +292,49 @@ Session ID: d8a8feb905984d7e6c403d4b0b76a1b5
                   <a name="NavigateToProfileandPreferences">
                   </a> <!-- NavigateToProfileandPreferences -->
                   <span class="method-name">NavigateToProfileandPreferences</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdateEmailaddress">
+                  </a> <!-- UpdateEmailaddress -->
+                  <span class="method-name">UpdateEmailaddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdateFirstName">
+                  </a> <!-- UpdateFirstName -->
+                  <span class="method-name">UpdateFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdateLastName">
+                  </a> <!-- UpdateLastName -->
+                  <span class="method-name">UpdateLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testPages.SavedAddressesTestPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAddress">
+                  </a> <!-- addAddress -->
+                  <span class="method-name">addAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteAddress">
+                  </a> <!-- deleteAddress -->
+                  <span class="method-name">deleteAddress</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -411,36 +393,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'updateCreditCard')
-data.setCell(0, 2, 'testPages.PaymentMethodTestPage')
-data.setCell(0, 3, 72691);
+data.setCell(0, 1, 'addAddress')
+data.setCell(0, 2, 'testPages.SavedAddressesTestPage')
+data.setCell(0, 3, 65285);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'NavigateToProfileandPreferences')
 data.setCell(1, 2, 'testPages.ProfileandPreferencesTestPage')
-data.setCell(1, 3, 37473);
+data.setCell(1, 3, 53956);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addAddress')
-data.setCell(2, 2, 'testPages.SavedAddressesTestPage')
-data.setCell(2, 3, 30459);
+data.setCell(2, 1, 'updateCreditCard')
+data.setCell(2, 2, 'testPages.PaymentMethodTestPage')
+data.setCell(2, 3, 47329);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'UpdateEmailaddress')
-data.setCell(3, 2, 'testPages.ProfileandPreferencesTestPage')
-data.setCell(3, 3, 3180);
+data.setCell(3, 1, 'setAsDefault')
+data.setCell(3, 2, 'testPages.SavedAddressesTestPage')
+data.setCell(3, 3, 30827);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'UpdateLastName')
+data.setCell(4, 1, 'UpdateEmailaddress')
 data.setCell(4, 2, 'testPages.ProfileandPreferencesTestPage')
-data.setCell(4, 3, 3064);
+data.setCell(4, 3, 4990);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'UpdateFirstName')
+data.setCell(5, 1, 'UpdateLastName')
 data.setCell(5, 2, 'testPages.ProfileandPreferencesTestPage')
-data.setCell(5, 3, 194);
+data.setCell(5, 3, 4099);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'UpdateFirstName')
+data.setCell(6, 2, 'testPages.ProfileandPreferencesTestPage')
+data.setCell(6, 3, 3841);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'editAddress')
+data.setCell(7, 2, 'testPages.SavedAddressesTestPage')
+data.setCell(7, 3, 1242);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'deleteAddress')
+data.setCell(8, 2, 'testPages.SavedAddressesTestPage')
+data.setCell(8, 3, 707);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -473,48 +467,72 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">NavigateToProfileandPreferences</span>
-                <span class="method-start">3409 ms</span>
+                <span class="method-start">5646 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">UpdateFirstName</span>
-                <span class="method-start">40892 ms</span>
+                <span class="method-start">59611 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">UpdateLastName</span>
-                <span class="method-start">41092 ms</span>
+                <span class="method-start">63458 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">UpdateEmailaddress</span>
-                <span class="method-start">44159 ms</span>
+                <span class="method-start">67560 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quite</span>
+                <span class="method-start">72555 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPages.SavedAddressesTestPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">LaunchSite</span>
+                <span class="method-start">72925 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addAddress</span>
+                <span class="method-start">77282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteAddress</span>
+                <span class="method-start">142572 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">addAddress</span>
-                <span class="method-start">47345 ms</span>
+                <span class="method-name">editAddress</span>
+                <span class="method-start">143282 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setAsDefault</span>
+                <span class="method-start">144539 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quite</span>
+                <span class="method-start">175366 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPages.PaymentMethodTestPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">LaunchSite</span>
-                <span class="method-start">77819 ms</span>
+                <span class="method-start">175736 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">updateCreditCard</span>
-                <span class="method-start">80933 ms</span>
+                <span class="method-start">179929 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quite</span>
+                <span class="method-start">227266 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

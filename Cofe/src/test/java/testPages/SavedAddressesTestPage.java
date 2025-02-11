@@ -8,8 +8,9 @@ import Locator.MyAccountFlyoutLocator;
 import Locator.SavedAddressesLocator;
 import setup.BasicActions;
 import setup.HelperClass;
+import setup.setupDriver;
 
-public class SavedAddressesTestPage {
+public class SavedAddressesTestPage extends setupDriver {
 	
 	BasicActions basicActions;
 	HomepegeLocator homepegeLocator;

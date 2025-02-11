@@ -3,22 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testPages.ProfileandPreferencesTestPage">
-        <methods>
-          <include name="UpdateFirstName"/>
-          <include name="LaunchSite"/>
-          <include name="UpdateLastName"/>
-          <include name="UpdateEmailaddress"/>
-        </methods>
-      </class> <!-- testPages.ProfileandPreferencesTestPage -->
       <class name="testPages.SavedAddressesTestPage">
         <methods>
-          <include name="addAddress"/>
+          <include name="editAddress"/>
+          <include name="setAsDefault"/>
+          <include name="LaunchSite"/>
+          <include name="quite"/>
         </methods>
       </class> <!-- testPages.SavedAddressesTestPage -->
       <class name="testPages.PaymentMethodTestPage">
         <methods>
           <include name="updateCreditCard"/>
+          <include name="quite"/>
           <include name="LaunchSite"/>
         </methods>
       </class> <!-- testPages.PaymentMethodTestPage -->

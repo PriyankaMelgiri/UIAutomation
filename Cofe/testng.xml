@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
      <!-- Exclude the entire class by disabling it -->
-      <class name="testPages.ProfileandPreferencesTestPage"  enabled="false"/>
+      <class name="testPages.ProfileandPreferencesTestPage" />
       <class name="testPages.SavedAddressesTestPage"/>
       <class name="testPages.PaymentMethodTestPage"/>
     </classes>
