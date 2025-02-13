@@ -19,7 +19,7 @@ public class SavedAddressesTestPage extends setupDriver {
 	MyAccountFlyoutLocator myAccountFlyoutLocator;
 	
   @Test
-  public void addAddress() {
+  public void addAddress() throws InterruptedException {
 	  basicActions=new BasicActions();
 	  homepegeLocator=new HomepegeLocator();
 	  helperClass=new HelperClass();
@@ -28,8 +28,10 @@ public class SavedAddressesTestPage extends setupDriver {
 	  basicActions.siteLogin();
 	  basicActions.cookieAccept();
 	  basicActions.SignIn();
+	  Thread.sleep(2000);
 	  helperClass.getElement(homepegeLocator.myAccountIcon).click();
 	  helperClass.getElement(myAccountFlyoutLocator.savedAdresses).click();
+	  Thread.sleep(1000);
 	  helperClass.getElement(savedAddressesLocator.savedAddressesLink).click();
 	  helperClass.getElement(savedAddressesLocator.addAddressForm).click();
 	  helperClass.getElement(savedAddressesLocator.firstNameField).clear();
@@ -38,8 +40,6 @@ public class SavedAddressesTestPage extends setupDriver {
 	  helperClass.getElement(savedAddressesLocator.lastNameField).sendKeys("Patil");
 	  helperClass.getElement(savedAddressesLocator.addressPOBoxField).sendKeys("Po Box");
 	  helperClass.getElement(savedAddressesLocator.addressSuggestionList).click();
-	  
-	  helperClass.getElement(savedAddressesLocator.addAddressButton).click();
 	  helperClass.getElement(savedAddressesLocator.phoneNumberField).sendKeys("2121111111");
 	  helperClass.getElement(savedAddressesLocator.addAddressButton).click();
 	  boolean addressAddedSucessMessage=helperClass.getElement(savedAddressesLocator.addressAddedSucessMessage).isDisplayed();
@@ -47,9 +47,11 @@ public class SavedAddressesTestPage extends setupDriver {
   }
   
   @Test
-  public void editAddress() {
+  public void editAddress() throws InterruptedException {
+	  Thread.sleep(3000);
 	  helperClass.getElement(savedAddressesLocator.editButton).click();
 	  helperClass.getElement(savedAddressesLocator.phoneNumberField).sendKeys("2121111111");
+	  helperClass.getElement(savedAddressesLocator.updateInformationButton).click();
 	  boolean updateAddressSuccessMessage=helperClass.getElement(savedAddressesLocator.updateAddressSuccessMessage).isDisplayed();
 	  Assert.assertTrue(updateAddressSuccessMessage);
   }
@@ -61,7 +63,8 @@ public class SavedAddressesTestPage extends setupDriver {
   }
   
   @Test
-  public void setAsDefault() {
+  public void setAsDefault() throws InterruptedException {
+	  Thread.sleep(3000);
 	  helperClass.getElement(savedAddressesLocator.setAsDefaultRadioButton).click();
 	  boolean defaultAddressSetSuccessMessage=helperClass.getElement(savedAddressesLocator.defaultAddressSetSuccess).isDisplayed();
 	  Assert.assertTrue(defaultAddressSetSuccessMessage);

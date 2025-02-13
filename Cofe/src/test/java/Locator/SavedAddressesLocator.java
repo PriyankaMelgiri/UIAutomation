@@ -28,6 +28,8 @@ public class SavedAddressesLocator {
 	
 	public By editButton=By.xpath("//button[text()='Edit']");
 	
+	public By updateInformationButton=By.xpath("//button[text()='Update Information']");
+	
 	public By updateAddressSuccessMessage=By.xpath("//div[@role='status']//div[text()='Your Address has been successfully added.']");
 	
 	public By deleteButton=By.xpath("//button[text()='Delete']");

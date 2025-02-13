@@ -5,19 +5,14 @@
     <classes>
       <class name="testPages.SavedAddressesTestPage">
         <methods>
+          <include name="deleteAddress"/>
           <include name="editAddress"/>
           <include name="setAsDefault"/>
-          <include name="LaunchSite"/>
           <include name="quite"/>
+          <include name="LaunchSite"/>
+          <include name="addAddress"/>
         </methods>
       </class> <!-- testPages.SavedAddressesTestPage -->
-      <class name="testPages.PaymentMethodTestPage">
-        <methods>
-          <include name="updateCreditCard"/>
-          <include name="quite"/>
-          <include name="LaunchSite"/>
-        </methods>
-      </class> <!-- testPages.PaymentMethodTestPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
